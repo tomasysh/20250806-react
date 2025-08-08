@@ -3,7 +3,7 @@ export const Navbar = () => {
     <nav className="navbar navbar-expand-lg navbar-light" id="mainNav">
       <div className="container px-4 px-lg-5">
         <a className="navbar-brand" href="index.html">
-          Start Bootstrap
+          Start Bootstrap1
         </a>
         <button
           className="navbar-toggler"
