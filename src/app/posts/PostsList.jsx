@@ -73,16 +73,16 @@ export default function PostsList() {
         posts.map((post, idx) => (
           <div key={String(post._id)}>
             <div className="post-preview">
-              <a href={`post.html`}>
+              <a href={`/posts/${String(post._id)}`}>
                 <h2 className="post-title">{post.title}</h2>
                 {post.subTitle && (
                   <h3 className="post-subtitle">{post.subTitle}</h3>
                 )}
               </a>
               <p className="post-meta">
-                Posted by
-                <a href="#!"> {post.author?.email || "Unknown"} </a>
-                on {post.createdAt}
+                發佈者
+                <a href="#!"> {post.author?.email || "Unknown"} </a>於{" "}
+                {post.createdAt}
               </p>
             </div>
             {idx < posts.length - 1 && <hr className="my-4" />}
