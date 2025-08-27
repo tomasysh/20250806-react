@@ -1,6 +1,7 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import { Navbar, Hero, Footer } from "@/components/Layout";
+import { Footer } from "@/components/Layout";
+import Navbar from "@/components/Navbar";
 import BootstrapClient from "@/providers/BootstrapClient";
 import AuthProvider from "@/providers/authProvider";
 
